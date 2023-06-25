@@ -2,3 +2,10 @@ spring:
   cloud:
     function:
       definition: forecast
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          function: DEBUG
