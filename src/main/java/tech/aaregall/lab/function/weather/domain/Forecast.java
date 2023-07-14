@@ -10,5 +10,10 @@ public record Forecast(GeoLocation geoLocation, List<HourlyForecast> hourlyForec
             Float temperature,
             Float precipitation) {
 
+        @Override
+        public String toString() {
+            return String.format("At %s, temperature will be %.2f º, precipitation of %.2f mm",
+                    time.toString(), temperature, precipitation);
+        }
     }
 }
